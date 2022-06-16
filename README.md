@@ -12,7 +12,7 @@ Backend Template for Nue.
 ```
 $ composer require nuesu/ui -vvv
 
-$ php artisan php artisan vendor:publish --provider="Nue\Ui\UiServiceProvider"
+$ php artisan vendor:publish --provider="Nue\Ui\UiServiceProvider"
 ```
 
 ## Usage
