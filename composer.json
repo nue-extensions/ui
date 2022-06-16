@@ -1,0 +1,28 @@
+{
+    "name": "nuesu/ui",
+    "description": "Nue UI.",
+    "keywords": ["laravel", "ui components"],
+    "require": {
+        "php": ">=7.3"
+    },
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Noviyanto Rahmadi",
+            "email": "novay@btekno.id"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nue\\Ui\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nue\\Ui\\UiServiceProvider"
+            ]
+        }
+    }
+}
