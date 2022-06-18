@@ -7,8 +7,7 @@
     <title>@yield('title') :: {{ config('ui.name') }}</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="shortcut icon" href="{{ asset('favicon.png') }}">
-
+    <link rel="shortcut icon" href="{{ config('ui.brand.favicon') }}">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.btekno.id/templates/v2/css/vendor.min.css">
