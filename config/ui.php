@@ -47,4 +47,19 @@ return [
         'default_avatar' => 'https://cdn.btekno.id/templates/v2/img/160x160/img1.jpg'
 	], 
 
+	/*
+    |--------------------------------------------------------------------------
+    | Themes customize
+    |--------------------------------------------------------------------------
+    |
+    | This value is for customize of admin pages.
+    |
+    */
+    'themes' => [
+
+    	// Supported: "dark" and "light"
+    	'sidebar' => 'dark'
+
+    ], 
+
 ];
