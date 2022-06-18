@@ -20,17 +20,17 @@ $ php artisan vendor:publish --provider="Nue\Ui\UiServiceProvider"
 ### Layouts
 `@extends('ui::app')` or `@extends('ui::blank')`
 
-### Change Icons (& Favicon)
+### Custom favicon, brands and sidebar themes
 You can customize them from `config/ui.php` using your links.
 
-### Custom Menu (Manual)
+### Custom menu (manual)
 Manage it as usual code from `resources/views/vendor/nue/menu/*`.
 
 ### Example
 
 Open `http://localhost/example`.
 
-## Components (Soon)
+## Components (soon)
 
 ### Alert
 ```html
