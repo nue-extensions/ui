@@ -20,7 +20,9 @@
     </style>
     <script>
         window.hs_config = {
-            "themeAppearance": {}
+            "themeAppearance":{
+                "layoutSkin": "default"
+            }
         }
     </script>
 
