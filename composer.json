@@ -1,5 +1,5 @@
 {
-    "name": "nuesu/ui",
+    "name": "nue-extensions/ui",
     "description": "Nue UI.",
     "keywords": ["laravel", "ui components"],
     "require": {
