@@ -38,6 +38,36 @@
     <script src="https://cdn.btekno.id/templates/v2/js/theme.min.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
+    <script>
+        (function() {
+            const $dropdownBtn = document.getElementById('selectThemeDropdown')
+            const $variants = document.querySelectorAll(`[aria-labelledby="selectThemeDropdown"] [data-icon]`)
+
+            const setActiveStyle = function () {
+                $variants.forEach($item => {
+                    if ($item.getAttribute('data-value') === HSThemeAppearance.getOriginalAppearance()) {
+                        $dropdownBtn.innerHTML = `<i class="${$item.getAttribute('data-icon')}" />`
+                        return $item.classList.add('active')
+                    }
+
+                    $item.classList.remove('active')
+                })
+            }
+
+            $variants.forEach(function ($item) {
+                $item.addEventListener('click', function () {
+                    HSThemeAppearance.setAppearance($item.getAttribute('data-value'))
+                })
+            })
+
+            setActiveStyle()
+
+            window.addEventListener('on-hs-appearance-change', function () {
+                setActiveStyle()
+            })
+        })()
+    </script>
+
     @yield('js')
 </body>
 </html>
